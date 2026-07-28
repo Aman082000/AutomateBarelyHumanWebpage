@@ -1,6 +1,8 @@
 # Automate BarelyHuman Webpage
 
-This repository contains end-to-end UI automation tests for the **BarelyHuman Custom ROM Index** website using **Playwright** with **JavaScript**.
+This repository contains UI automation tests for the **BarelyHuman Custom ROM Index** website using **Playwright** with **JavaScript**.
+
+Webpage link - https://cri.barelyhuman.dev/
 
 ## Tech Stack
 
