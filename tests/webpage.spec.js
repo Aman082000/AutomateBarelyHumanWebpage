@@ -73,3 +73,17 @@ test.describe('Test Suite', ()=>{
     });
 
 })
+
+test('Suite 2 ', async({page})=>{
+
+    await page.goto("https://www.google.com/");
+    await page.getByTitle('Search').fill("Cohere Health");
+
+    await page.getByLabel("Google Search").first().click()
+
+
+
+
+
+} )
+
