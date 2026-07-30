@@ -23,6 +23,20 @@ test.describe('Test Suite', ()=>{
         
     })
 
+    test('Test Status Scroll Functionality', async({page})=>{
+        await page.locator('#status').click();
+
+        await page.locator('#status option', {hasText: "Discontinued"}).click();
+        await page.getByText("Apply filters").click();
+
+        const rows = await page.locator('table tbody tr');
+        const rowCount = await rows.count();
+
+        for(let row = 0; row<rowCount; row++){
+            await rows.nth(row).locator('td').nth(3).toHaveText('Discontinued');
+        }
+
+    })
     
 
 
